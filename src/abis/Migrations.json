@@ -74,7 +74,7 @@
   "sourceMap": "36:500:0:-;;;129:52;8:9:-1;5:2;;;30:1;27;20:12;5:2;129:52:0;165:10;157:5;;:18;;;;;;;;;;;;;;;;;;36:500;;;;;;",
   "deployedSourceMap": "36:500:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:500:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;365:168;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;365:168:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;86:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;61:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;254:105;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;254:105:0;;;;;;;;;;;;;;;;;:::i;:::-;;365:168;234:5;;;;;;;;;;;220:19;;:10;:19;;;216:26;;;428:19;461:11;428:45;;480:8;:21;;;502:24;;480:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;480:47:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;480:47:0;;;;241:1;216:26;365:168;:::o;86:36::-;;;;:::o;61:20::-;;;;;;;;;;;;;:::o;254:105::-;234:5;;;;;;;;;;;220:19;;:10;:19;;;216:26;;;344:9;317:24;:36;;;;216:26;254:105;:::o",
   "source": "pragma solidity >=0.4.21 <0.6.0;\r\n\r\ncontract Migrations {\r\n  address public owner;\r\n  uint public last_completed_migration;\r\n\r\n  constructor() public {\r\n    owner = msg.sender;\r\n  }\r\n\r\n  modifier restricted() {\r\n    if (msg.sender == owner) _;\r\n  }\r\n\r\n  function setCompleted(uint completed) public restricted {\r\n    last_completed_migration = completed;\r\n  }\r\n\r\n  function upgrade(address new_address) public restricted {\r\n    Migrations upgraded = Migrations(new_address);\r\n    upgraded.setCompleted(last_completed_migration);\r\n  }\r\n}\r\n",
-  "sourcePath": "C:\\Users\\Rohit Patel\\Downloads\\SolidityProg\\marketplace\\starter_kit\\src\\contracts\\Migrations.sol",
+  "sourcePath": "C:\\Users\\Rohit Patel\\Downloads\\SolidityProg\\marketplace\\src\\contracts\\Migrations.sol",
   "ast": {
     "absolutePath": "project:/src/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -202,7 +202,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 84,
+                        "referencedDeclaration": 261,
                         "src": "165:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -286,7 +286,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 84,
+                        "referencedDeclaration": 261,
                         "src": "220:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -906,7 +906,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 84,
+                                  "referencedDeclaration": 261,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -997,7 +997,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 84,
+                                  "referencedDeclaration": 261,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -1475,12 +1475,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xCCC36B58a5fc872B56cD1Bad4aAc9254b955606A",
-      "transactionHash": "0x4646424a6f0222c9b4821ecacd33546a7c7b542a49b44c3f1f1e99a1d818e8c8"
+      "address": "0x98Df615D7b01568F31787767E6b2A4F61eb9A556",
+      "transactionHash": "0x1580bb3108b69dd67dd82f38fae6a4590b67986b24ed8092d59b327781164375"
     }
   },
   "schemaVersion": "3.4.6",
-  "updatedAt": "2022-03-28T11:24:22.489Z",
+  "updatedAt": "2022-03-31T10:19:05.256Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

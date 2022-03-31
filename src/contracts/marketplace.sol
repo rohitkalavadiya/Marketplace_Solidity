@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity >= 0.5.0 <0.9.0;
 
 contract Marketplace {
@@ -67,9 +68,5 @@ contract Marketplace {
         address(_seller).transfer(msg.value);
         //tigger event  
         emit ProductPurchase(product_count, _product.name , _product.price, msg.sender , true);
-
     }
-
-
-
 }
